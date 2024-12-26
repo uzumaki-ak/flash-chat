@@ -1,43 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0MW49CHGK3"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag("js", new Date());
+        gtag("config", "G-0MW49CHGK3");
+    </script>
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
+    <meta name="description" content="Rapid WhatsApp - chat without saving contact." />
+    <meta name="keywords" content="Rapid Whatsapp, Chat without saving contact" />
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
-  </head>
-  <body>
+    <title>Rapid Whatsapp</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css" />
+
+    <style>
+        /* Infinite background scrolling animation */
+        @import url(https://fonts.googleapis.com/css?family=Exo:100);
+
+        /* Background data */
+        body {
+            margin: 0;
+            padding: 0;
+            color: #999;
+            font: 400 16px/1.5 'Exo', ubuntu, "Segoe UI", helvetica, arial, sans-serif;
+            text-align: center;
+            background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAIAAACRXR/mAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAABnSURBVHja7M5RDYAwDEXRDgmvEocnlrQS2SwUFST9uEfBGWs9c97nbGtDcquqiKhOImLs/UpuzVzWEi1atGjRokWLFi1atGjRokWLFi1atGjRokWLFi1af7Ukz8xWp8z8AAAA//8DAJ4LoEAAlL1nAAAAAElFTkSuQmCC") repeat 0 0;
+            animation: bg-scrolling 10s linear infinite; /* Adjust duration for speed */
+        }
+
+        @keyframes bg-scrolling {
+            0% { background-position: 0 0; }
+            100% { background-position: 0 50px; } /* Move the background vertically */
+        }
+
+        h3, p {
+            position: relative;
+            z-index: 1; /* Bring content above the background */
+            color: black; /* Change font color to black */
+            font-weight: bold; /* Maximize font weight */
+        }
+
+        /* Style for the container */
+        .container {
+            padding: 20px;
+        }
+
+        /* Different colors for each pair */
+        .color-pair-1 {
+            color: #FF5733; /* Red color */
+        }
+
+        .color-pair-2 {
+            color: #000000; /* Green color */
+        }
+
+        .color-pair-3 {
+            color: #020a2d; /* Blue color */
+        }
+
+        .color-pair-4 {
+            color: #0526fe; /* Pink color */
+        }
+
+        /* Add more pairs as needed */
+    </style>
+</head>
+<body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  </body>
+    <div class="container py-3">
+        <h3 class="color-pair-1">About Flash Chat</h3>
+        <p class="color-pair-2">Flash-Chat is an open-source React application that streamlines the process of starting WhatsApp conversations without saving phone numbers. Simply enter the number, click "Chat," and you're instantly directed to the WhatsApp chat. The app also offers the ability to save contacts directly in the browser's local storage for quick future access.</p>
+        
+        
+        <div>
+          <a class="btn btn-outline-dark color-pair-4" href="https://github.com/uzumaki-ak" target="_blank" style="margin-right: 50px;">Have Suggestion ?</a>
+          <a class="btn btn-outline-dark color-pair-3" href="https://github.com/uzumaki-ak" target="_blank">Get Code</a>
+        </div>
+        
+        
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+</body>
 </html>
